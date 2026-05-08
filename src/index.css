@@ -1,0 +1,151 @@
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #1a1a1a;
+  min-height: 100vh;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ── Form Elements ── */
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 9px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a1a;
+  width: 100%;
+  outline: none;
+  transition:
+    border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #1d9e75;
+  box-shadow: 0 0 0 3px rgba(29, 158, 117, 0.12);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ── Buttons ── */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: transparent;
+  color: #1a1a1a;
+  font-size: 14px;
+  transition:
+    background 0.15s,
+    transform 0.1s;
+}
+
+button:hover {
+  background: #f0f2f4;
+}
+button:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: #1d9e75;
+  color: #fff;
+  border-color: #1d9e75;
+  font-weight: 500;
+}
+.btn-primary:hover {
+  background: #0f6e56;
+  border-color: #0f6e56;
+}
+
+/* ── Card ── */
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+/* ── Badges ── */
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.badge-green {
+  background: #d1fae5;
+  color: #065f46;
+}
+.badge-teal {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+.badge-amber {
+  background: #fef3c7;
+  color: #92400e;
+}
+.badge-blue {
+  background: #dbeafe;
+  color: #1e40af;
+}
+.badge-coral {
+  background: #ffe4e6;
+  color: #9f1239;
+}
+.badge-gray {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+/* ── Utility ── */
+.success-box {
+  background: #d1fae5;
+  border: 1px solid #6ee7b7;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  color: #065f46;
+  font-size: 14px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f6f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
